@@ -13,36 +13,70 @@ export const DarkTheme = {
     corTitulo: '#fffdd0'
 }
 
-// Criando uma div
 export const Container = styled.div`
     background-color: ${props => props.theme.corFundo};
     color: ${props => props.theme.corTexto};
 `
 
-// Criando um botão
 export const Button = styled.button`
     padding: 10px;
     border: none;
     background-color: #4caf50;
-    color: white
+    color: white;
     margin: 10px;
 `
 
 // Criando um título
 export const TitlePage = styled.h1`
-    color: red;
+    color: #0077ff;
     font-size: 20px;
 `
 
 export const InformacoesCep = styled.div`
-    margin: 20px;
+    margin: 24px;
     display: flex;
     flex-direction: column;
 `
 
-
-// Criando uma div para formulários
 export const DivForm = styled.div`
     display: inline;
     background-color: #FFF;
+`
+
+export const MenuStyle = styled.nav`
+   background: #0077ff;
+    display:flex;
+    flex-direction: row;
+    align-items:center;
+    justify-content:center;
+`
+
+export const UlStyle = styled.ul`
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    gap:16px;
+    text-decoration: none;
+    list-style: none;
+`
+export const LinkStyle = styled.a`
+    text-decoration: none;
+    color: black;
+    font-size: 16px;
+`
+
+export const TextStyle = styled.a`
+    max-width: 300px;
+`
+
+export const Logo = styled.image`
+    background-image: '/logo.png';
+    width: 40px;
+    height: 40px;
+`
+
+export const DarkMode = styled.div`
+    display: flex;
+    flex-direction: row;
+    background-color: #0077ff;
 `

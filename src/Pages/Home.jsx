@@ -1,5 +1,5 @@
-import Menu from "../Componentes/Menu";
-import { TitlePage } from "../Estilos/Estilo";
+import Menu from "../Components/Menu";
+import { TitlePage } from "../Style/style";
 
 
 function Home (){

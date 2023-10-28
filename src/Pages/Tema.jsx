@@ -1,7 +1,7 @@
-import Menu from "../Componentes/Menu";
+import Menu from "../Components/Menu";
 
 
-function ListaCarros (){
+function Tema (){
     return(
         <>
 
@@ -12,4 +12,4 @@ function ListaCarros (){
         </>
     )
 }
-export default ListaCarros;
+export default Tema;

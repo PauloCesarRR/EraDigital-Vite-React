@@ -1,12 +1,11 @@
 import {BrowserRouter, Routes, Route} from 'react-router-dom';
 import Home from './Pages/Home';
-import ListaCarros from './Pages/ListaCarros';
+import Tema from './Pages/Tema';
 import Sobre from './Pages/Sobre';
-import { Button, Container, LightTheme, DarkTheme } from './Estilos/Estilo';
+import { Button, Container, LightTheme, DarkTheme, Logo, DarkMode } from './Style/style';
 import { ThemeProvider } from 'styled-components';
 import { useState } from 'react';
-import Cep from './Pages/cep';
-
+import Contato from './Pages/Contato';
 function App (){
   const [theme, setTheme] = useState('light')
 
@@ -17,19 +16,21 @@ function App (){
   return(
     <>
       <ThemeProvider theme={theme === 'light' ? LightTheme : DarkTheme}>
-      <h1>CONFIGURAÇÃO DE UM LOGO</h1>
-
-      <Button onClick={mudarTheme}>BOTÃO</Button>
-
+      
+      <DarkMode>
+        <Button onClick={mudarTheme}>BOTÃO</Button>
+      </DarkMode>
+        
+      
       <hr/>
         <Container>
           <BrowserRouter>
             <Routes>
 
                 <Route path='/' element={<Home />} />
-                <Route path='/ListaCarros' element={<ListaCarros />} />
+                <Route path='/Tema' element={<Tema />} />
                 <Route path='/Sobre' element={<Sobre />} />
-                <Route path='/cep' element={<Cep />} />
+                <Route path='/Contato' element={<Contato />} />
 
             </Routes>
           </BrowserRouter>

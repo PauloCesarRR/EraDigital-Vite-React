@@ -1,10 +1,10 @@
 import { useState } from "react"
-import Menu from "../Componentes/Menu"
-import { DivForm, InformacoesCep, TitlePage } from "../Estilos/Estilo"
+import Menu from "../Components/Menu"
+import {InformacoesCep, TitlePage } from "../Style/style"
 import axios from "axios"
 
 
-function Cep() {
+function Contato() {
 
     // Vamos criar os estados para armazenar o cep
     const[cep, setCep] = useState('')
@@ -18,6 +18,7 @@ function Cep() {
     //Lidar com a mudança do campo de entrada CEP
     function handleCepChange(e) {
         setCep(e.target.value)
+        pesquisaCEP()
     }
 
     function pesquisaCEP() {
@@ -36,13 +37,6 @@ function Cep() {
                         setData({})
                         setError('CEP NÃO ENCONTRADO')
                     }
-                }
-                
-            )
-            .catch(
-                function(error) {
-                    setData({})
-                    setError('CEP NÃO ENCONTRADO')
                 }
             )
     }
@@ -79,4 +73,4 @@ function Cep() {
     )
 }
 
-export default Cep;
+export default Contato;
