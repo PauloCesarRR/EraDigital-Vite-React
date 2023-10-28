@@ -2,13 +2,13 @@ import styled from "styled-components";
 
 
 export const LightTheme = {
-    corFundo: 'honeydew',
-    corTexto: 'maroon',
-    corTitulo: 'red'
+    corFundo: '#fff',
+    corTexto: '#1593e7',
+    corTitulo: '#1593e7'
 }
 
 export const DarkTheme = {
-    corFundo: '#2a0a0a',
+    corFundo: '#000000',
     corTexto: 'white',
     corTitulo: '#fffdd0'
 }
@@ -21,9 +21,10 @@ export const Container = styled.div`
 export const Button = styled.button`
     padding: 10px;
     border: none;
-    background-color: #4caf50;
+    background-color: #000;
     color: white;
     margin: 10px;
+    border-radius: 16px;
 `
 
 // Criando um título
@@ -49,6 +50,7 @@ export const MenuStyle = styled.nav`
     flex-direction: row;
     align-items:center;
     justify-content:center;
+    width: 100vw;
 `
 
 export const UlStyle = styled.ul`
@@ -65,14 +67,26 @@ export const LinkStyle = styled.a`
     font-size: 16px;
 `
 
-export const TextStyle = styled.a`
+export const TextStyle = styled.p`
     max-width: 300px;
 `
 
-export const Logo = styled.image`
-    background-image: '/logo.png';
-    width: 40px;
+export const Logo = styled.img`
+    width: 80px;
     height: 40px;
+`
+
+export const Perfil = styled.img`
+    width: 120px;
+    height: 120px;
+`
+
+export const PageStyle = styled.div`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-items: center;
 `
 
 export const DarkMode = styled.div`

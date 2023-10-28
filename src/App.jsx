@@ -18,6 +18,7 @@ function App (){
       <ThemeProvider theme={theme === 'light' ? LightTheme : DarkTheme}>
       
       <DarkMode>
+        <Logo src='/logo.png'/>
         <Button onClick={mudarTheme}>BOTÃO</Button>
       </DarkMode>
         
