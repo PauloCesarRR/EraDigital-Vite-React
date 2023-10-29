@@ -1,6 +1,6 @@
 import { useState } from "react"
 import Menu from "../Components/Menu"
-import {InformacoesCep, TitlePage } from "../Style/style"
+import {InformacoesCep, TitlePage, PageStyle } from "../Style/style"
 import axios from "axios"
 
 
@@ -42,7 +42,7 @@ function Contato() {
     }
 
     return (
-        <>
+        <PageStyle>
             <Menu />
             <TitlePage> PESQUISA CEP</TitlePage>
 
@@ -69,7 +69,7 @@ function Contato() {
 
 
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
-        </>
+        </PageStyle>
     )
 }
 

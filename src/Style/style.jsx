@@ -69,11 +69,18 @@ export const LinkStyle = styled.a`
 
 export const TextStyle = styled.p`
     max-width: 300px;
+    text-align: center;
 `
 
 export const Logo = styled.img`
     width: 80px;
     height: 40px;
+`
+
+export const Image = styled.img`
+    width: 120px;
+    height: 120px;
+    border-radius: 16px;
 `
 
 export const Perfil = styled.img`
@@ -93,4 +100,16 @@ export const DarkMode = styled.div`
     display: flex;
     flex-direction: row;
     background-color: #0077ff;
+`
+
+export const Body = styled.body`
+    font-style: normal; 
+    font-family: Roboto, sans-serif;
+    width: 100vw;
+    height: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: top;
+    padding: 0px;
+    margin: 0px;
 `

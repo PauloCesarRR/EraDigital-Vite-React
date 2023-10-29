@@ -1,18 +1,18 @@
 import Menu from "../Components/Menu";
-import { TitlePage } from "../Style/style";
+import { TitlePage, PageStyle } from "../Style/style";
 
 
 function Home (){
     return(
-        <>
+        <PageStyle>
             <Menu />
 
             <hr/>
             <TitlePage>Home</TitlePage>
 
-            <p>Lorem ipsum, dolor sit</p>
-            <p>Lore</p>
-        </>
+            <p>Este projeto é o Checkpoint 5 de Responsive de Web Devlopment</p>
+            <p>RM99615</p>
+        </PageStyle>
     )
 }
 
