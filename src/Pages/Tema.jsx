@@ -16,6 +16,9 @@ function Tema (){
         <PageStyle>
             <Menu />
             <hr/>
+
+            <h1>ERA DIGITAL</h1>
+
             <WrapText>
                 <TextStyle>A Era da Informação ou era digital são termos frequentemente utilizados para designar os avanços tecnológicos advindos da Terceira Revolução Industrial e que reverberaram na difusão de um ciberespaço, um meio de comunicação instrumentalizado pela informática e pela internet.</TextStyle>
                 <Image src='/O.jfif'/>
